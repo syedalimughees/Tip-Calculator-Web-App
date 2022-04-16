@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href='https://fonts.googleapis.com/css?family=Space+Mono' rel='stylesheet'>  
+  <link rel="stylesheet" href="sass/styles.css">
+  <title>Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: #26c0ab; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="logo">
+      <img src="images/logo.svg" alt="logo">
+    </div>
+
+    <div class="card">
+      <div class="input-area">
+        <div class="bill">
+          <div class="label-wrapper">
+            <label for="input-bill">Bill</label>
+          </div>
+        </div>
+
+        <div class="input-wrapper">
+          <input type="text" class="input-text" name="input-bill" id="input-bill" placeholder="0.0">
+          <img src="images/icon-dollar.svg" alt="dollar">
+        </div>
+
+        <div class="tip">
+          <div class="label-wrapper">
+              <label for="input-tip">Select Tip %</label>
+          </div>
+
+          <div class="btn-wrapper">
+              <div class="btn tip">5%</div>
+              <div class="btn tip">10%</div>
+              <div class="btn tip btn-active">15%</div>
+              <div class="btn tip">25%</div>
+              <div class="btn tip">50%</div>
+              <input class="input-text" type="text" name="input-tip" id="input-tip" placeholder="Custom">
+          </div>
+      </div>
+
+        <div class="people">
+          <div class="label-wrapper">
+            <label for="input-people">Number of People</label>
+            <div class="error">Can't be zero.</div>
+          </div>
+
+          <div class="input-wrapper">
+            <input type="text" name="input-people" id="input-people" class="input-text" placeholder="0.0">
+            <img src="images/icon-person.svg" alt="person">
+          </div>
+        </div>
+      </div>
+
+      <div class="output-area">
+        <div class="output-wrapper">
+          <div class="output-values">
+              <div class="title-wrapper">
+                  <div class="title">Tip Amount</div>
+                  <div class="desc">/ person</div>
+              </div>
+              <div class="value">$4.27</div>
+          </div>
+
+          <div class="output-values">
+              <div class="title-wrapper">
+                  <div class="title">Total</div>
+                  <div class="desc">/ person</div>
+              </div>
+              <div class="value">$32.79</div>
+          </div>
+        </div>
+        <div class="btn reset">Reset</div>    
+      </div>
+    </div>
+  </main>
+  
+  <div class="attribution">
+    <br>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ali Mughees</a>.
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
